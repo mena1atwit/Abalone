@@ -36,3 +36,9 @@ Something more about this
 Using visualizations of different attributes of abalone, we were able to find correlations between age and attributes of size, finding that the correlations tend to grow weaker with age. We also found that the significance of sex in size attributes of abalone are minimal, and the greatest predictor of other attributes can be found in the age, especially younger ages.
 
 ## References
+
+
+## Corentin Individual Report
+
+As I was curious about how the existence of outliers in the data, I decided to use a boxplot to see if any of the attributes had larger amounts of outliers and by how much compared to others. My results were the following: 
+![Corentin Boxplot](CorentinBoxplot.png)
