@@ -21,10 +21,13 @@ During our cleaning, as our primary objective pertains to the age of the abalone
 Our analysis of the data found our primary and secondary hypotheses to be true to an extent. Through the visualization of our data were able to see that as the abalone are young (before their sex can be determined), their age is more strongly correlated to their other 7 attributes, meaning the predictions of age or other attributes made from age can be more accurate, but as they grow older and their sex is determinable, these the correlations become weaker, making these types of predictions harder. This can be seen in our heat maps of male, female, and infant abalone.
 
 For male abalone the correlations between age and other attributes are low
+![Alex lm](Images/HMM.png)
 
 For females, the attributes are low as well, but they are noticeably lower than that of male abalone.
+![Alex lm](Images/HMF.png)
 
 In infants, the correlations of age are significantly higher than that of males or females.
+![Alex lm](Images/HMI.png)
 
 For our second hypothesis, we thought that in abalone, it would be harder to find correlations between sex and other attributes of size and weight. We found that visualized, the difference between the attributes of the male and female abalone appears the be almost none.
 
