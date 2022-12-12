@@ -38,7 +38,25 @@ Using visualizations of different attributes of abalone, we were able to find co
 ## References
 
 
-## Corentin Individual Report
+# Corentin Individual Report
+## Visualization
 
 As I was curious about how the existence of outliers in the data, I decided to use a boxplot to see if any of the attributes had larger amounts of outliers and by how much compared to others. My results were the following: 
+
 ![Corentin Boxplot](CorentinBoxplot.png)
+
+From this boxplot, we can observe that there is a tendency for length and diameter to be lower than normal, while weight has a tendency to be higher than normal. I did not include age because age is, on average, one degree of magnitude larger than the 8 other attributes, so including age would make the boxplot extremely difficult to analyze visually.
+## Making a Predictive model
+As I was interested in whether or not it was possible to guess the age of an abalone based on the 8 attributes of size and weight it has, I decided to make use of Scikit-Learn's Support Vector Machine model. I would have most likely been more accurate if I had turned my age into a categorical value (binary) and used a Support Vector Classifier (SVC), but it would have been much harder to see just how precise the algorithm it.
+
+Therefore, I opted to use the Support Vector Regression, which is able to work with the continuous age data points we have. After splitting our dataset into a training set (70% of the data) and a testing set (30%), I found that my SVR had a score if 52% for the testing set and 56% for the training set.
+
+![Corentin SVR](CorentinSVR.png)
+
+This is far from ideal. However, it is a result to be expected, especially since we saw that there was a relatively weak correlation between each of the attributes with age. However, looking at how much the result is, on average, off by, we notice that although it does not get the exactly correct age, its average age guess is close to the real age.
+
+![Corentin offBy](CorentinOffBy.png)
+
+Finally, I decided to see if there was a significant difference between the estimation score of different sexes, as we had previously seen that there was a tighter correlation with infants, then male, then female. Indeed, I found that the scores were the best for infants, were lower for males, and even lower for females.
+
+![Corentin offBy](CorentinSexesScore.png)
