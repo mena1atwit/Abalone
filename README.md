@@ -66,8 +66,8 @@ Finally, I decided to see if there was a significant difference between the esti
 
 To try and predict the age from the other attributes, or attributes based on age, I decided that I would make linear models based off the data we have. This would be linear models on the scatters plots that we had previously used.
 
-![Alex lm](AlexLenghtModel.png)
-![Alex lm](AlexWholeWeightModel.png)
+![Alex lm](images/AlexLenghtModel.png)
+![Alex lm](images/AlexWholeWeightModel.png)
 ## linear model
 
 As the data was hard to view and predict the age, I thought it would be useful to make a linear model. With this, it would be able to take into account all the data we have for any specific relation and create the linear model to fit the data. In viewing the models that were created, it is easy to see that the linear model is not a perfect representation of how how the particular attribute changes in with accordance to age. For each plot, I added the three categories of the population (M, F, I). With this, you can see that as the linear model for infants predicts their attributes as they turn into adults, the model loses some accuracy, but still trends in the correct general direction. The same can be said for the male and female linear models in trying to predict infant attributes. To get more accurate predictions, different models can be explored, but the linear model I have created seems to be within what is possible for the data set. In making these models, I considered removing the outliers, but ended up keeping them. The reasoning for this is that I consider the ouliers to be normal variations for individuals within the dataset, and by extension the natural population of abalone. Without the context, I assumed that these are true outliers and are not the result of large errors in measurement or any other mistakes.
