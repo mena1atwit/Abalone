@@ -29,11 +29,14 @@ For females, the attributes are low as well, but they are noticeably lower than 
 In infants, the correlations of age are significantly higher than that of males or females.
 ![Alex lm](Images/HMI.png)
 
-For our second hypothesis, we thought that in abalone, it would be harder to find correlations between sex and other attributes of size and weight. We found that visualized, the difference between the attributes of the male and female abalone appears the be almost none.
+For our second hypothesis, we thought that in abalone, it would be harder to find correlations between sex and other attributes of size and weight. We found that visualized, the difference between the attributes of the male and female abalone appears the be almost none, while infants are generally smaller in all attributes compared to both males and females.
+
+![MFI Comparison](Images/MFIComparison.png)
 
 ## Discussion
-Concrete conclusions cannot be made about this dataset based on our analysis and visualizations without the full context of the abalone the data is on. Information such as the location, species, and climate must be given for more conclusive results. 
-Something more about this
+Concrete conclusions cannot be made about this dataset based on our analysis and visualizations without the full context of the abalone the data is on. Information such as the location, species, and climate must be given for more conclusive results. We also need to be aware that sex has a huge impact on the correlation between the abalone's physical attributes and its age, so we would likely have to find other attributes to look at to get better predictions for older abalone whose gender is identifiable.
+
+We also found that we had some minor issues with the fact that the sex was a string and not a float, so some calculations or plots did not take sex into account, despite us wanting to.
 
 ## Summary
 Using visualizations of different attributes of abalone, we were able to find correlations between age and attributes of size, finding that the correlations tend to grow weaker with age. We also found that the significance of sex in size attributes of abalone are minimal, and the greatest predictor of other attributes can be found in the age, especially younger ages.
